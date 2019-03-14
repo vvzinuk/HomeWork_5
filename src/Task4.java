@@ -1,4 +1,4 @@
-public class Task4 {
+class Task4 {
     static int[] getPositiveElements(int[] array){
         return separate( true, array );
     }
@@ -36,11 +36,10 @@ public class Task4 {
     }
 
     static void printSeparatedArrays(int[]array){
-        Task1.printArray( array );
-        System.out.println("Array with only negative elements: ");
-        Task1.printArray( getPositiveElements( array ) );
-        System.out.println("Array with only negative elements: ");
-        Task1.printArray( getNegativeElements( array ) );
+        System.out.println("TASK 4: SPLIT ARRAY ON TWO - WITH POSITIVE AND NEGATIVE VALUES");
+        Task1.printArray( "Generated array: ",array );
+        Task1.printArray("Array with only negative elements: ", getPositiveElements( array ) );
+        Task1.printArray("Array with only negative elements: ", getNegativeElements( array ) );
         System.out.println("_________________________");
     }
 }

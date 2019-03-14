@@ -1,6 +1,6 @@
 class Task2 {
 
-    public static int getNumOfOddElements(int[] array){
+    static int getNumOfOddElements(int[] array){
         int counter = 0;
         for (int element: array){
             if (element%2 != 0){
@@ -10,7 +10,7 @@ class Task2 {
         return counter;
     }
 
-    public static int getSumOfOddElements(int[] array){
+    static int getSumOfOddElements(int[] array){
         int sum = 0;
         for (int element: array){
             if (element%2 != 0){
@@ -21,8 +21,9 @@ class Task2 {
     }
 
     static void printNumAndSumOfOddElements(int[] array){
-        Task1.printArray(array);
-        System.out.println("The summ of all odd elements is: " + getSumOfOddElements( array ));
+        System.out.println("TASK 2: GET SUM AND AMOUNT OF ALL ODD ELEMENTS");
+        Task1.printArray("Generated array: ",array);
+        System.out.println("The summ of all odd elements is:   " + getSumOfOddElements( array ));
         System.out.println("The number of all odd elements is: " + getNumOfOddElements( array ));
         System.out.println("_________________________");
     }

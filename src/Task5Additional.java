@@ -1,4 +1,4 @@
-public class Task5Additional {
+class Task5Additional {
     static int getAverageValue (int[] array){
         int sum = 0;
         for (int element: array) {
@@ -18,7 +18,8 @@ public class Task5Additional {
     }
 
     static void printAverage (int[] array){
-        Task1.printArray( array );
+        System.out.println("TASK 5: FIND AVERAGE ELEMENT BY VALUE AND AMOUNT OF ELEMENTS BIGGER THAN IT");
+        Task1.printArray( "Generated array: ",array );
         System.out.println("The average element value is: " + getAverageValue( array ));
         System.out.println("The amount of elements bigger than average element: " + getAmountBiggerThanAverageElements( array ));
         System.out.println("_________________________");

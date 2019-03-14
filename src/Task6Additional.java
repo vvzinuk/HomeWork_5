@@ -11,10 +11,10 @@ class Task6Additional {
     }
 
     static void printConcatenatedArrays (int[] arr1, int[] arr2){
-        Task1.printArray( arr1 );
-        Task1.printArray( arr2 );
-        System.out.print("Result of concatenation: ");
-        Task1.printArray( concatenateArrays( arr1,arr2 ));
+        System.out.println("TASK 6: CONCATENATE TWO ARRAYS");
+        Task1.printArray( "Generated array: ",arr1 );
+        Task1.printArray( "Generated array: ",arr2 );
+        Task1.printArray("Result of concatenation: ", concatenateArrays( arr1,arr2 ));
         System.out.println("_________________________");
     }
 }

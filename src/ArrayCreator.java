@@ -12,28 +12,30 @@ public abstract class ArrayCreator {
         }
     }
 
-    public static double[] createArray (double setType, int size, int maxiItemSize){
-        if (size > 0){
-            double[] arrayDouble = new double[size];
-            for(int i = 0; i < arrayDouble.length; i++){
-                arrayDouble[i] = Math.random()* maxiItemSize;
-            }
-            return arrayDouble;
-        } else {
-            return null;
-        }
-    }
+    //я міг би, звичайно, реалізувати тут перегрузку методів, але вирішив що коду і так достатньо)
 
-    public static char[] createArray (char setType, int size){
-        if (size > 0){
-            char[] arrayChar = new char[size];
-            for(int i = 0; i < arrayChar.length; i++){
-                arrayChar[i] = (char)(33 + Math.random()* 94);
-            }
-            return arrayChar;
-        } else {
-            return null;
-        }
-    }
+//    public static double[] createArray (double setType, int size, int maxiItemSize){
+//        if (size > 0){
+//            double[] arrayDouble = new double[size];
+//            for(int i = 0; i < arrayDouble.length; i++){
+//                arrayDouble[i] = Math.random()* maxiItemSize;
+//            }
+//            return arrayDouble;
+//        } else {
+//            return null;
+//        }
+//    }
+//
+//    public static char[] createArray (char setType, int size){
+//        if (size > 0){
+//            char[] arrayChar = new char[size];
+//            for(int i = 0; i < arrayChar.length; i++){
+//                arrayChar[i] = (char)(33 + Math.random()* 94);
+//            }
+//            return arrayChar;
+//        } else {
+//            return null;
+//        }
+//    }
 
 }
